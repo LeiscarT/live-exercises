@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiveExercises.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,23 @@ namespace LiveExercises.Views
     {
         public CustomRenderPage()
         {
-            InitializeComponent();
+            Content = new StackLayout
+            {
+                Children =
+                {
+                    new Label
+                    {
+                        Text = "Hello, Custom Renderer !",
+                    },
+                    new MyEntry
+                    {
+                        Text = "In Shared Code",
+                    }
+                },
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center,
+               
+            };
         }
     }
 }
