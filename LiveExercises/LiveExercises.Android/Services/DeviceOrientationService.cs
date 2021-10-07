@@ -4,16 +4,19 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using LiveExercises.Models;
 using LiveExercises.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Xamarin.Forms.Internals;
+using Xamarin.Forms;
 
+
+[assembly: Dependency(typeof(LiveExercises.Droid.Services.DeviceOrientationService))]
 namespace LiveExercises.Droid.Services
 {
-    class DeviceOrientationService : IDeviceOrientationService
+    public class DeviceOrientationService : IDeviceOrientationService
     {
         public DeviceOrientation GetDeviceOrientation()
         {

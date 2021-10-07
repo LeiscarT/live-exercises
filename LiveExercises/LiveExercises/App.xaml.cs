@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiveExercises.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace LiveExercises
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new OrientationView();
         }
 
         protected override void OnStart()

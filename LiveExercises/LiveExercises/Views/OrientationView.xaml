@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel ="clr-namespace:LiveExercises.ViewModels"
+             x:Class="LiveExercises.Views.OrientationView">
+    <ContentPage.BindingContext>
+        <viewModel:OrientationViewModel></viewModel:OrientationViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Device Orientation" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" TextColor="Black"></Label>
+            <Button Text="Get Device Orientation" Command="{Binding GetOrientationCommand}" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="3" HorizontalOptions="Center"></Button>
+            <Frame BackgroundColor="Black" Margin="10">
+            <Label Text="{Binding Orientation}" TextColor="White" HorizontalOptions="Center" FontSize="Medium" ></Label>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
