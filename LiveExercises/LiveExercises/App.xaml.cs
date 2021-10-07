@@ -11,7 +11,7 @@ namespace LiveExercises
         {
             InitializeComponent();
 
-            MainPage = new OrientationView();
+            MainPage = new CustomRenderPage();
         }
 
         protected override void OnStart()
