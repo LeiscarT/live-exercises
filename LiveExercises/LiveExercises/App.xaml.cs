@@ -11,7 +11,7 @@ namespace LiveExercises
         {
             InitializeComponent();
 
-            MainPage = new CustomRenderPage();
+            MainPage = new FocusEffectPage();
         }
 
         protected override void OnStart()
