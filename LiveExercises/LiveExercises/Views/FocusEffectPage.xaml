@@ -13,7 +13,7 @@
 
             <Entry Text="Effect attached to an Entry" VerticalOptions="Center" HorizontalOptions="Center">
                 <Entry.Effects>
-                    <local:FocusEffectViewModel/>
+                    <local:FocusEffect/>
                 </Entry.Effects>
             </Entry>
         </StackLayout>

@@ -13,10 +13,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ResolutionGroupName("MyCompany")]
-[assembly: ExportEffect(typeof(LiveExercises.Droid.ViewModels.FocusEffectViewModel), nameof(LiveExercises.Droid.ViewModels.FocusEffectViewModel))]
-namespace LiveExercises.Droid.ViewModels
+[assembly: ExportEffect(typeof(LiveExercises.Droid.Effects.FocusEffect), nameof(LiveExercises.Droid.Effects.FocusEffect))]
+namespace LiveExercises.Droid.Effects
 {
-    public class FocusEffectViewModel : PlatformEffect
+    public class FocusEffect : PlatformEffect
     {
         Android.Graphics.Color _originalBackGroundColor = new Android.Graphics.Color(0, 0, 0, 0);
         Android.Graphics.Color _backgroundColor;

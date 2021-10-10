@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace LiveExercises.ViewModels
 {
-    public class FocusEffectViewModel : RoutingEffect
+    public class FocusEffect : RoutingEffect
     {
-        public FocusEffectViewModel() : base($"MyCompany.{nameof(FocusEffectViewModel)}")
+        public FocusEffect() : base($"MyCompany.{nameof(FocusEffect)}")
         {
 
         }

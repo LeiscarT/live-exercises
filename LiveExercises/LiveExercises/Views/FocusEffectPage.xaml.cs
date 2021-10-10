@@ -23,7 +23,7 @@ namespace LiveExercises.Views
 
             };
 
-            entry.Effects.Add(Effect.Resolve($"MyCompany.{nameof(FocusEffectViewModel)}"));
+            entry.Effects.Add(Effect.Resolve($"MyCompany.{nameof(FocusEffect)}"));
 
             Content = new StackLayout
             {
